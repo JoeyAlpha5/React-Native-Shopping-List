@@ -4,7 +4,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 const ListItem = (props) =>{
 
     //condtional
-    const Milf = (props) =>{
+    const Milk = (props) =>{
         if(props.text == "ilk"){
             return <Text>{props.text}</Text>;
         }
@@ -14,7 +14,7 @@ const ListItem = (props) =>{
     return(
         <TouchableOpacity>
             <View style={styles.view}>
-                {/* <Milf text={props.item}/> */}
+                {/* <Milk text={props.item}/> */}
                 <Text style={styles.text}>{props.item}</Text>
                 <Icon name="remove" size={20} color="#ffffff" onPress={()=>props.delete(props.id)}/>
             </View>
